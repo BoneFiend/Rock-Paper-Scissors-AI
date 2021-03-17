@@ -3,11 +3,11 @@ print("Rock, Paper or Scissors?")
 user = input("").lower()
 
 if user == "rock":
-    ai = "Paper"
+    ai = "paper"
 elif user == "paper":
-    ai = "Scissors"
+    ai = "scissors"
 elif user == "scissors":
-    ai = "Rock"
+    ai = "rock"
 else:
     ai = "idk"
 
