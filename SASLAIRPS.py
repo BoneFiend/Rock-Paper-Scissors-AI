@@ -1,16 +1,4 @@
-
-print("Rock, Paper or Scissors?")
-user = input("").lower()
-
-if user == "rock":
-    ai = "paper"
-elif user == "paper":
-    ai = "scissors"
-elif user == "scissors":
-    ai = "rock"
-else:
-    ai = "idk"
-
-
-print("You fool, you never stood a chance!")
-print("I pick " + ai)
+rps = ["rock", "paper", "scissors"]
+while True:
+    try: print("\nI pick " + rps[(rps.index(input("Rock, Paper or Scissors?\n").lower()) + 1) % 3] + "\n")
+    except ValueError: print("No cheating!!\n")
